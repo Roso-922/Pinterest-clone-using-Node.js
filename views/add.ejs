@@ -1,0 +1,60 @@
+<% include ./partials/header.ejs %>
+<div class="w-full min-h-screen bg-zinc-800 ">
+<form 
+  action="/createpost" 
+  method="post" 
+  enctype="multipart/form-data"
+  class="w-full max-w-md mx-auto bg-zinc-400 p-6 rounded-lg shadow-md space-y-4"
+>
+
+  
+  <div>
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Upload Image
+    </label>
+    <input 
+      type="file" 
+      name="postimage"
+      class="w-full border border-gray-300 rounded-md p-2"
+    />
+  </div>
+
+  
+  <div>
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Title
+    </label>
+    <input 
+      type="text" 
+      name="tittle"
+      placeholder="Enter title"
+      class="w-full border border-gray-300 rounded-md px-3 py-2 outline-none focus:ring-2 focus:ring-red-400"
+    />
+  </div>
+
+  
+  <div>
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Description
+    </label>
+    <textarea 
+      name="description"
+      rows="4"
+      placeholder="Write something..."
+      class="w-full border border-gray-300 rounded-md px-3 py-2 resize-none outline-none focus:ring-2 focus:ring-red-400"
+    ></textarea>
+  </div>
+
+  
+  <button 
+    type="submit"
+    class="w-full bg-red-500 text-white py-2 rounded-md font-semibold hover:bg-red-600 transition"
+  >
+    Submit
+  </button>
+
+</form>
+</div>
+
+
+<% include ./partials/footer.ejs %>

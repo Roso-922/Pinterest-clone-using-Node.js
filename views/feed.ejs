@@ -1,0 +1,32 @@
+<% include ./partials/header.ejs %>
+
+<div class="bg-zinc-800 min-h-screen p-5">
+
+  <!-- Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    <% posts.forEach(elem => { %>
+
+      <!-- Card -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+
+        <img
+          src="/images/uploads/<%= elem.image %>"
+          class="w-full h-64 object-cover"
+          alt="post image"
+        />
+
+        <div class="p-3">
+          <h1 class="text-black font-semibold text-lg">
+            <%= elem.tittle %>
+          </h1>
+        </div>
+
+      </div>
+
+    <% }) %>
+
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>

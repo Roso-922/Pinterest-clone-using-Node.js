@@ -1,0 +1,25 @@
+{
+  "name": "pinterest",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.19.0",
+    "http-errors": "~1.6.3",
+    "mongoose": "^9.1.5",
+    "morgan": "~1.9.1",
+    "multer": "^2.0.2",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^9.0.1",
+    "tailwindcss": "^4.1.18",
+    "uuid": "^13.0.0"
+  }
+}
